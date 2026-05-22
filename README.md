@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+        <!DOCTYPE html>
+        <html lang="pt-BR">
 
-<head>
+        <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Revisão de Contrato de Veículo - Reduza suas parcelas</title>
 
         <!-- Meta Description -->
-        <meta name="description"
-                content="Saiba como reduzir suas parcelas de financiamento de veículo com revisão contratual especializada. Proteja seu patrimônio e evite juros abusivos." />
+        <meta name="description" content="Saiba como reduzir suas parcelas de financiamento de veículo com revisão contratual especializada. Proteja seu patrimônio e evite juros abusivos." />
 
         <!-- Open Graph -->
         <meta property="og:title" content="Revisão de Contrato de Veículo - Reduza suas parcelas" />
-        <meta property="og:description"
-                content="Saiba como reduzir suas parcelas de financiamento de veículo com revisão contratual especializada. Proteja seu patrimônio e evite juros abusivos." />
+        <meta property="og:description" content="Saiba como reduzir suas parcelas de financiamento de veículo com revisão contratual especializada. Proteja seu patrimônio e evite juros abusivos." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.italobezerraadvocacia.com.br/" />
         <meta property="og:image" content="https://www.italobezerraadvocacia.com.br/og-image.jpg" />
@@ -21,8 +19,7 @@
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Revisão de Contrato de Veículo - Reduza suas parcelas" />
-        <meta name="twitter:description"
-                content="Saiba como reduzir suas parcelas de financiamento de veículo com revisão contratual especializada. Proteja seu patrimônio e evite juros abusivos." />
+        <meta name="twitter:description" content="Saiba como reduzir suas parcelas de financiamento de veículo com revisão contratual especializada. Proteja seu patrimônio e evite juros abusivos." />
         <meta name="twitter:image" content="https://www.italobezerraadvocacia.com.br/twitter-image.jpg" />
 
         <!-- Favicon -->
@@ -33,23 +30,26 @@
                         font-family: Arial, sans-serif;
                         margin: 0;
                         padding: 0;
-                        background-color: #f9f9f9;
                         color: #333;
                         line-height: 1.6;
+                        background-image: url('https://i.imgur.com/20EKbkh.jpg');
+                        background-size: cover;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
                 }
 
                 .container {
                         max-width: 720px;
                         margin: 0 auto;
                         padding: 20px;
-                        background: #fff;
+                        background-color: rgba(255, 255, 255, 0.7);
                         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 }
 
                 header {
                         margin-bottom: 40px;
-                        text-align: center;
-                        /* Facilita centralização do subtítulo flutuante */
+                        text-align: center; /* Facilita centralização do subtítulo flutuante */
                 }
 
                 h1 {
@@ -84,8 +84,7 @@
                         font-style: normal;
                         font-weight: 500;
                         text-align: center;
-                        margin: 6px auto 0 auto;
-                        /* margem superior 6px, laterais automáticas para centralizar, sem margem inferior */
+                        margin: 6px auto 0 auto; /* margem superior 6px, laterais automáticas para centralizar, sem margem inferior */
                         min-height: 24px;
                         opacity: 1;
                         transition: opacity 0.6s ease;
@@ -260,14 +259,13 @@
                         margin-bottom: 40px;
                         padding-bottom: 20px;
                         border-bottom: 1px solid #dcdcdc;
-                        background-color: #fff;
-        
-                transition: background-color 0.3s ease;
+                        background-color: rgba(255, 255, 255, 0.7);
+                        transition: background-color 0.3s ease;
                 }
 
                 /* Alternância de cor de fundo das seções principais */
                 .section-divider.alt-bg {
-                        background-color: #f7f9fa;
+                        background-color: rgba(247, 249, 250, 0.7);
                 }
 
                 /* Ajuste para o botão do formulário para ficar destacado e convidativo */
@@ -338,8 +336,7 @@
                                 padding 0.3s ease;
                         text-decoration: none;
                         gap: 8px;
-                        margin-bottom: 0;
-                        /* reset margin bottom */
+                        margin-bottom: 0; /* reset margin bottom */
                 }
 
                 #whatsapp-float-btn svg {
@@ -387,8 +384,7 @@
                         #whatsapp-float-btn {
                                 width: 48px;
                                 height: 48px;
-                                bottom: 70px;
-                                /* increased bottom to avoid overlap with other UI */
+                                bottom: 70px; /* increased bottom to avoid overlap with other UI */
                                 right: 15px;
                                 font-size: 12px;
                                 padding: 0 10px;
@@ -517,8 +513,7 @@
                         </p>
 
                         <!-- Botão fluente WhatsApp após o parágrafo introdutório -->
-   
-                     <div style="text-align: center;">
+                        <div style="text-align: center;">
                                 <button type="button" class="whatsapp-fluent-btn" aria-label="Fale conosco" loading="lazy">
           <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-label="Ícone WhatsApp" loading="lazy">
             <path
@@ -588,8 +583,7 @@
 
                         <!-- Nova Seção: Por que fazer a revisão do contrato? -->
                         <section class="section-divider" aria-labelledby="novo-processo-revisao-title">
-                                <h2 id="novo-processo-revisao-title">Por que fazer a revisão do contrato? Entenda o
-                                        processo de revisão de contrato de veículo</h2>
+                                <h2 id="novo-processo-revisao-title">Por que fazer a revisão do contrato? Entenda o processo de revisão de contrato de veículo</h2>
                                 <p>
                                         Os contratos de financiamento são elaborados para favorecer o banco, muitas
                                         vezes com
@@ -615,7 +609,7 @@
                                         alternativas para proteger seu patrimônio.
                                 </p>
                         </section>
-
+                                            
                         <!-- FAQ -->
                         <section class="section-divider alt-bg" aria-labelledby="faq-title">
                                 <h2 id="faq-title">Perguntas frequentes</h2>
@@ -642,7 +636,6 @@
                                 </div>
                                 <div class="faq-item">
                                         <strong>5 — Posso recuperar valores pagos?</strong>
-
                                         <p>Sim. Se forem identificadas cobranças ilegais, é possível pedir a devolução
                                                 dos valores pagos indevidamente.</p>
                                 </div>
@@ -689,7 +682,7 @@
                                 </p>
                         </section>
 
-                        <!-- CTA Final Reforçado antes do rodapé -->
+                                              <!-- CTA Final Reforçado antes do rodapé -->
                         <section class="section-divider alt-bg" style="text-align:center;">
                                 <p style="font-weight: bold; font-size: 18px; margin-bottom: 15px; color: #2c3e50;">
                                         Não perca mais dinheiro com seu financiamento. Saiba como reduzir suas parcelas
@@ -707,7 +700,7 @@
                 </main>
 
                 <footer>
-                        &copy; 2026 Italo Bezerra Advocacia & Consultoria - Todos os direitos reservados.
+                        © 2026 Italo Bezerra Advocacia & Consultoria - Todos os direitos reservados.
                 </footer>
         </div>
 
@@ -813,8 +806,7 @@
       return isValid;
     }
 
-    // Prevenir recarregamento da página no submit do formulário
- e enviar mensagem personalizada via WhatsApp
+    // Prevenir recarregamento da página no submit do formulário e enviar mensagem personalizada via WhatsApp
     document.getElementById('lead-form').addEventListener('submit', function (e) {
       e.preventDefault();
 
