@@ -3,6 +3,29 @@
 
 <head>
   <meta charset="UTF-8" />
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WGFQX7LF');
+  </script>
+  <!-- End Google Tag Manager -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Revisão de Contrato de Veículo | Reduza suas parcelas</title>
@@ -11,9 +34,12 @@
     content="Saiba como reduzir suas parcelas de financiamento de veículo com revisão contratual especializada. Proteja seu patrimônio e evite juros abusivos." />
 
   <meta property="og:title" content="Revisão de Contrato de Veículo | Reduza suas parcelas" />
+
   <meta property="og:description"
     content="Saiba como reduzir suas parcelas de financiamento de veículo com revisão contratual especializada." />
+
   <meta property="og:type" content="website" />
+
   <meta property="og:image" content="contract-banner.jpg" />
 
   <link rel="preload" as="image" href="contract-banner.jpg" fetchpriority="high" />
@@ -78,14 +104,12 @@
       font-size: 18px;
     }
 
-    /* HERO */
-
     .hero {
       min-height: 100vh;
       display: flex;
       align-items: center;
       background:
-        linear-gradient(rgba(4, 16, 36, 0.82), rgba(5, 23, 53, 0.84)),
+        linear-gradient(rgba(4, 16, 36, 0.82), rgba(5, 23, 53, 0.85)),
         url("contract-banner.jpg") center center/cover no-repeat;
       position: relative;
     }
@@ -117,7 +141,7 @@
       line-height: 1.08;
       margin-bottom: 26px;
       font-weight: 800;
-      max-width: 780px;
+      text-wrap: balance;
     }
 
     .hero p {
@@ -161,8 +185,6 @@
       margin-top: 1px;
     }
 
-    /* BUTTON */
-
     .cta-btn {
       display: inline-flex;
       align-items: center;
@@ -184,8 +206,6 @@
       transform: translateY(-3px);
       box-shadow: 0 22px 45px rgba(34, 197, 94, 0.34);
     }
-
-    /* BENEFITS */
 
     .benefits-grid {
       display: grid;
@@ -221,8 +241,6 @@
       margin-bottom: 18px;
     }
 
-    /* FORM */
-
     .form-section {
       background: linear-gradient(135deg, #0f172a, #1e3a8a);
     }
@@ -239,7 +257,7 @@
     .form-info {
       padding: 60px;
       background:
-        linear-gradient(rgba(2, 6, 23, 0.84), rgba(15, 23, 42, 0.88)),
+        linear-gradient(rgba(2, 6, 23, 0.82), rgba(15, 23, 42, 0.85)),
         url("contract-banner.jpg") center center/cover no-repeat;
       color: white;
     }
@@ -251,7 +269,7 @@
     }
 
     .form-info p {
-      color: rgba(255, 255, 255, 0.88);
+      color: rgba(255, 255, 255, 0.86);
       font-size: 18px;
     }
 
@@ -314,8 +332,6 @@
       opacity: 0.95;
     }
 
-    /* EDUCATIONAL */
-
     .educational {
       background: white;
     }
@@ -332,8 +348,6 @@
       color: #334155;
       font-size: 18px;
     }
-
-    /* FAQ */
 
     .faq-grid {
       display: flex;
@@ -363,8 +377,6 @@
       color: #475569;
     }
 
-    /* ABOUT */
-
     .about-section {
       background: linear-gradient(135deg, #0f172a, #1e3a8a);
       color: white;
@@ -372,14 +384,14 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 0.9fr 1.1fr;
       gap: 50px;
       align-items: center;
     }
 
     .about-image img {
       width: 100%;
-      max-width: 480px;
+      height: auto;
       border-radius: 30px;
       object-fit: cover;
       box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
@@ -392,12 +404,10 @@
     }
 
     .about-content p {
-      color: rgba(255, 255, 255, 0.92);
+      color: rgba(255, 255, 255, 0.90);
       margin-bottom: 18px;
       font-size: 18px;
     }
-
-    /* SOCIAL */
 
     .social-section {
       text-align: center;
@@ -425,8 +435,6 @@
       transform: translateY(-3px);
     }
 
-    /* FINAL CTA */
-
     .final-cta {
       background:
         linear-gradient(rgba(4, 16, 36, 0.84), rgba(4, 16, 36, 0.84)),
@@ -442,8 +450,6 @@
       line-height: 1.2;
     }
 
-    /* FOOTER */
-
     footer {
       background: #020617;
       color: rgba(255, 255, 255, 0.75);
@@ -451,8 +457,6 @@
       padding: 28px 20px;
       font-size: 14px;
     }
-
-    /* FLOAT */
 
     .whatsapp-float {
       position: fixed;
@@ -478,8 +482,6 @@
       width: 36px;
       fill: white;
     }
-
-    /* RESPONSIVO */
 
     @media (max-width: 992px) {
 
@@ -509,10 +511,6 @@
 
       section {
         padding: 70px 0;
-      }
-
-      .about-image img {
-        max-width: 100%;
       }
     }
 
@@ -552,9 +550,15 @@
 
 <body>
 
-  <!-- HERO -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGFQX7LF" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <section class="hero">
+
     <div class="container">
 
       <div class="hero-grid">
@@ -597,9 +601,8 @@
       </div>
 
     </div>
-  </section>
 
-  <!-- BENEFÍCIOS -->
+  </section>
 
   <section>
 
@@ -647,8 +650,6 @@
 
   </section>
 
-  <!-- FORM -->
-
   <section class="form-section" id="formulario">
 
     <div class="container">
@@ -662,7 +663,8 @@
           </h2>
 
           <p>
-            Preencha os dados abaixo e receba orientação jurídica especializada para verificar possíveis abusos no seu contrato.
+            Preencha os dados abaixo e receba orientação jurídica especializada para verificar possíveis abusos no
+            seu contrato.
           </p>
 
         </div>
@@ -713,8 +715,6 @@
 
   </section>
 
-  <!-- EDUCATIVA -->
-
   <section class="educational">
 
     <div class="container">
@@ -734,11 +734,13 @@
         </p>
 
         <p>
-          Durante o processo, são verificadas taxas, juros e prazos, buscando adequar o contrato à realidade legal e financeira do cliente, sem expor termos técnicos complexos.
+          Durante o processo, são verificadas taxas, juros e prazos, buscando adequar o contrato à realidade legal e
+          financeira do cliente, sem expor termos técnicos complexos.
         </p>
 
         <p>
-          O objetivo é proporcionar segurança e transparência, orientando sobre as melhores alternativas para proteger seu patrimônio.
+          O objetivo é proporcionar segurança e transparência, orientando sobre as melhores alternativas para proteger
+          seu patrimônio.
         </p>
 
       </div>
@@ -746,8 +748,6 @@
     </div>
 
   </section>
-
-  <!-- FAQ -->
 
   <section>
 
@@ -761,43 +761,55 @@
 
         <details>
           <summary>1 — Preciso negociar com o banco?</summary>
+
           <p>
-            Não. O ideal é que a negociação seja feita por um advogado especializado, capaz de identificar cláusulas abusivas e buscar a melhor solução para o caso.
+            Não. O ideal é que a negociação seja feita por um advogado especializado, capaz de identificar cláusulas
+            abusivas e buscar a melhor solução para o caso.
           </p>
         </details>
 
         <details>
           <summary>2 — Como saber se os juros são abusivos?</summary>
+
           <p>
-            Somente com a análise do contrato. Em muitos casos, os juros e encargos cobrados ultrapassam os limites considerados razoáveis pelo mercado.
+            Somente com a análise do contrato. Em muitos casos, os juros e encargos cobrados ultrapassam os limites
+            considerados razoáveis pelo mercado.
           </p>
         </details>
 
         <details>
           <summary>3 — Posso receber indenização?</summary>
+
           <p>
-            Sim, dependendo do caso. Cobranças indevidas, negativação irregular e outros prejuízos podem gerar direito à indenização.
+            Sim, dependendo do caso. Cobranças indevidas, negativação irregular e outros prejuízos podem gerar direito
+            à indenização.
           </p>
         </details>
 
         <details>
           <summary>4 — Vale a pena fazer a revisão?</summary>
+
           <p>
-            Sim. Muitos contratos possuem cláusulas abusivas que aumentam excessivamente o valor da dívida sem que o consumidor perceba.
+            Sim. Muitos contratos possuem cláusulas abusivas que aumentam excessivamente o valor da dívida sem que o
+            consumidor perceba.
           </p>
         </details>
 
         <details>
           <summary>5 — Posso recuperar valores pagos?</summary>
+
           <p>
-            Sim. Se forem identificadas cobranças ilegais, é possível pedir a devolução dos valores pagos indevidamente.
+            Sim. Se forem identificadas cobranças ilegais, é possível pedir a devolução dos valores pagos
+            indevidamente.
           </p>
         </details>
 
         <details>
           <summary>6 — Existem outras ilegalidades além dos juros?</summary>
+
           <p>
-            Sim. O contrato pode conter tarifas indevidas, seguros não autorizados, encargos excessivos e outras cláusulas abusivas.
+            Sim. O contrato pode conter tarifas indevidas, seguros não autorizados, encargos excessivos e outras
+            cláusulas abusivas.
           </p>
         </details>
 
@@ -806,8 +818,6 @@
     </div>
 
   </section>
-
-  <!-- SOBRE -->
 
   <section class="about-section">
 
@@ -816,15 +826,8 @@
       <div class="about-grid">
 
         <div class="about-image">
-
-          <img
-            src="lawyer-hero.jpg"
-            alt="Advogado especialista em revisão contratual"
-            width="480"
-            height="620"
-            loading="lazy"
-            decoding="async">
-
+          <img src="lawyer-hero.jpg" alt="Advogado especialista em revisão contratual" width="600" height="750"
+            loading="lazy" decoding="async">
         </div>
 
         <div class="about-content">
@@ -832,15 +835,19 @@
           <h2>Sobre o advogado</h2>
 
           <p>
-            Possuo 3 anos e meio de experiência jurídica, com pós-graduação em Direito do Consumidor. Ajudei dezenas de clientes pelo Brasil com múltiplos processos focados em ajudar o consumidor contra os abusos dos bancos, pagando somente o justo.
+            Possuo 3 anos e meio de experiência jurídica, com pós-graduação em Direito do Consumidor.
+            Ajudei dezenas de clientes pelo Brasil com múltiplos processos focados em ajudar o consumidor contra os
+            abusos dos bancos, pagando somente o justo.
           </p>
 
           <p>
-            Meu compromisso é defender VOCÊ (CONSUMIDOR), buscando assegurar o respeito às normas legais e a proteção do patrimônio dos meus clientes.
+            Meu compromisso é defender VOCÊ (CONSUMIDOR), buscando assegurar o respeito às normas legais e a proteção
+            do patrimônio dos meus clientes.
           </p>
 
           <p>
-            Minha atuação é pautada no atendimento humanitário e na disponibilidade para ajudar com seus problemas, sempre com foco na melhor orientação jurídica possível.
+            Minha atuação é pautada no atendimento humanitário e na disponibilidade para ajudar com seus problemas,
+            sempre com foco na melhor orientação jurídica possível.
           </p>
 
         </div>
@@ -850,8 +857,6 @@
     </div>
 
   </section>
-
-  <!-- REDES -->
 
   <section class="social-section">
 
@@ -881,8 +886,6 @@
 
   </section>
 
-  <!-- CTA FINAL -->
-
   <section class="final-cta">
 
     <div class="container">
@@ -900,18 +903,11 @@
 
   </section>
 
-  <!-- FOOTER -->
-
   <footer>
     © 2026 Italo Bezerra Advocacia — Todos os direitos reservados.
   </footer>
 
-  <!-- FLOAT -->
-
-  <a
-    class="whatsapp-float"
-    href="#formulario"
-    aria-label="Ir para formulário">
+  <a class="whatsapp-float" href="#formulario" aria-label="Ir para formulário">
 
     <svg viewBox="0 0 24 24">
       <path
