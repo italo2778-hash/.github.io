@@ -1,54 +1,50 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
-
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WGFQX7LF');
-  </script>
-  <!-- End Google Tag Manager -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Revisão de Contrato de Veículo | Reduza suas parcelas</title>
 
-  <meta name="description"
-    content="Saiba como reduzir suas parcelas de financiamento de veículo com revisão contratual especializada. Proteja seu patrimônio e evite juros abusivos." />
+  <meta
+    name="description"
+    content="Saiba como reduzir suas parcelas de financiamento de veículo com revisão contratual especializada. Proteja seu patrimônio e evite juros abusivos."
+  />
 
-  <meta property="og:title" content="Revisão de Contrato de Veículo | Reduza suas parcelas" />
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WGFQX7LF');
+  </script>
+  <!-- End Google Tag Manager -->
 
-  <meta property="og:description"
-    content="Saiba como reduzir suas parcelas de financiamento de veículo com revisão contratual especializada." />
+  <!-- Tipografia -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <meta property="og:type" content="website" />
-
-  <meta property="og:image" content="contract-banner.jpg" />
-
-  <link rel="preload" as="image" href="contract-banner.jpg" fetchpriority="high" />
-
-  <link rel="preconnect" href="https://wa.me" crossorigin />
-
-  <link rel="icon" href="data:," />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700;900&family=JetBrains+Mono:wght@400&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <style>
+    :root {
+      --primary: #2D2D2D;
+      --secondary: #6F563E;
+      --background: #F5F0EB;
+      --white: #FFFFFF;
+
+      --text: #2D2D2D;
+      --text-light: #625C56;
+      --border: #DED6CE;
+
+      --display-font: "Cormorant Garamond", serif;
+      --heading-font: "Cormorant Garamond", serif;
+      --body-font: "Raleway", sans-serif;
+      --mono-font: "JetBrains Mono", monospace;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -60,10 +56,12 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f7fb;
-      color: #1f2937;
+      font-family: var(--body-font);
+      font-size: 16px;
+      font-weight: 400;
       line-height: 1.7;
+      color: var(--text);
+      background: var(--background);
       overflow-x: hidden;
     }
 
@@ -87,12 +85,36 @@
       padding: 90px 0;
     }
 
+    /* =========================
+       TIPOGRAFIA
+    ========================= */
+
+    h1,
+    h2,
+    h3,
+    .section-title,
+    .about-content h2,
+    .form-info h2,
+    .form-box h3,
+    .final-cta h2 {
+      font-family: var(--heading-font);
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .hero h1 {
+      font-family: var(--display-font);
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.03;
+      color: var(--white);
+      margin-bottom: 26px;
+    }
+
     .section-title {
-      font-size: 38px;
+      font-size: 32px;
       line-height: 1.2;
       margin-bottom: 20px;
-      color: #0f172a;
-      font-weight: 800;
       text-align: center;
     }
 
@@ -100,17 +122,36 @@
       max-width: 850px;
       margin: 0 auto 50px;
       text-align: center;
-      color: #475569;
-      font-size: 18px;
+      color: var(--text-light);
+      font-family: var(--body-font);
+      font-size: 20px;
+      font-weight: 500;
     }
+
+    .hero p {
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 20px;
+      font-weight: 500;
+      max-width: 700px;
+      margin-bottom: 34px;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       min-height: 100vh;
       display: flex;
       align-items: center;
+
       background:
-        linear-gradient(rgba(4, 16, 36, 0.82), rgba(5, 23, 53, 0.85)),
-        url("contract-banner.jpg") center center/cover no-repeat;
+        linear-gradient(
+          rgba(45, 45, 45, 0.82),
+          rgba(45, 45, 45, 0.88)
+        ),
+        url("./contract-banner.jpg") center center / cover no-repeat;
+
       position: relative;
     }
 
@@ -125,39 +166,30 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.16);
+
+      background: rgba(111, 86, 62, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+
       color: #fff;
       padding: 10px 18px;
       border-radius: 999px;
-      font-size: 14px;
+
+      font-family: var(--body-font);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+
       margin-bottom: 28px;
-      backdrop-filter: blur(10px);
-    }
-
-    .hero h1 {
-      color: white;
-      font-size: 58px;
-      line-height: 1.08;
-      margin-bottom: 26px;
-      font-weight: 800;
-      text-wrap: balance;
-    }
-
-    .hero p {
-      color: rgba(255, 255, 255, 0.92);
-      font-size: 21px;
-      max-width: 700px;
-      margin-bottom: 34px;
     }
 
     .hero-card {
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 28px;
+      background: rgba(45, 45, 45, 0.78);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 24px;
       padding: 30px;
-      backdrop-filter: blur(14px);
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
     }
 
     .hero-card h3 {
@@ -179,33 +211,49 @@
     }
 
     .hero-card li::before {
-      content: "✔";
-      color: #4ade80;
-      font-weight: bold;
-      margin-top: 1px;
+      content: "✓";
+      color: #C9AA87;
+      font-weight: 700;
     }
+
+    /* =========================
+       BOTÕES
+    ========================= */
 
     .cta-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 12px;
-      background: linear-gradient(135deg, #22c55e, #16a34a);
+
+      background: var(--secondary);
       color: white;
-      padding: 18px 34px;
-      border-radius: 999px;
-      font-size: 17px;
+
+      padding: 17px 32px;
+      border-radius: 8px;
+
+      font-family: var(--body-font);
+      font-size: 16px;
       font-weight: 700;
-      border: none;
+
+      border: 1px solid var(--secondary);
       cursor: pointer;
-      transition: 0.25s ease;
-      box-shadow: 0 18px 35px rgba(34, 197, 94, 0.28);
+
+      transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
     }
 
     .cta-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 22px 45px rgba(34, 197, 94, 0.34);
+      background: #5E4936;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(111, 86, 62, 0.25);
     }
+
+    /* =========================
+       BENEFÍCIOS
+    ========================= */
 
     .benefits-grid {
       display: grid;
@@ -215,56 +263,85 @@
     }
 
     .benefit-card {
-      background: white;
-      border-radius: 24px;
+      background: var(--white);
+      border-radius: 18px;
       padding: 28px;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
-      border: 1px solid #e5e7eb;
-      transition: 0.25s ease;
+
+      border: 1px solid var(--border);
+
+      box-shadow: 0 10px 28px rgba(45, 45, 45, 0.05);
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
     }
 
     .benefit-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 34px rgba(45, 45, 45, 0.09);
     }
 
     .benefit-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 16px;
-      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      width: 48px;
+      height: 48px;
+
+      border-radius: 50%;
+
+      background: var(--secondary);
+      color: white;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
-      font-size: 22px;
+
+      font-size: 19px;
+      font-weight: 700;
+
       margin-bottom: 18px;
     }
 
+    .benefit-card p {
+      font-family: var(--body-font);
+      font-size: 16px;
+      color: var(--text);
+    }
+
+    /* =========================
+       FORMULÁRIO
+    ========================= */
+
     .form-section {
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      background: var(--primary);
     }
 
     .form-wrapper {
       background: white;
-      border-radius: 32px;
+      border-radius: 24px;
       overflow: hidden;
+
       display: grid;
       grid-template-columns: 1fr 1fr;
-      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.22);
+
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
     }
 
     .form-info {
       padding: 60px;
+
       background:
-        linear-gradient(rgba(2, 6, 23, 0.82), rgba(15, 23, 42, 0.85)),
-        url("contract-banner.jpg") center center/cover no-repeat;
+        linear-gradient(
+          rgba(45, 45, 45, 0.84),
+          rgba(45, 45, 45, 0.9)
+        ),
+        url("./contract-banner.jpg") center center / cover no-repeat;
+
       color: white;
     }
 
     .form-info h2 {
       font-size: 42px;
-      line-height: 1.15;
+      line-height: 1.12;
+      color: white;
       margin-bottom: 24px;
     }
 
@@ -275,12 +352,12 @@
 
     .form-box {
       padding: 60px;
+      background: white;
     }
 
     .form-box h3 {
-      font-size: 34px;
+      font-size: 32px;
       margin-bottom: 28px;
-      color: #0f172a;
     }
 
     form {
@@ -290,8 +367,9 @@
     }
 
     label {
-      font-weight: 700;
-      color: #1e293b;
+      font-family: var(--body-font);
+      font-weight: 600;
+      color: var(--text);
       margin-bottom: 8px;
       display: block;
     }
@@ -299,189 +377,275 @@
     input,
     select {
       width: 100%;
-      padding: 16px;
-      border-radius: 16px;
-      border: 2px solid #dbe4f0;
+      padding: 15px;
+
+      border-radius: 8px;
+      border: 1px solid var(--border);
+
+      font-family: var(--body-font);
       font-size: 16px;
+
       outline: none;
-      transition: 0.2s ease;
-      background: #fff;
+      background: white;
+
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
     }
 
     input:focus,
     select:focus {
-      border-color: #2563eb;
-      box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.12);
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 4px rgba(111, 86, 62, 0.1);
     }
 
     .submit-btn {
-      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      background: var(--secondary);
       color: white;
+
       border: none;
-      padding: 18px;
-      border-radius: 18px;
-      font-size: 17px;
-      font-weight: 800;
+      padding: 17px;
+
+      border-radius: 8px;
+
+      font-family: var(--body-font);
+      font-size: 16px;
+      font-weight: 700;
+
       cursor: pointer;
-      transition: 0.25s ease;
+      transition: 0.2s ease;
       margin-top: 10px;
     }
 
     .submit-btn:hover {
+      background: #5E4936;
       transform: translateY(-2px);
-      opacity: 0.95;
     }
 
+    /* =========================
+       EDUCATIVA
+    ========================= */
+
     .educational {
-      background: white;
+      background: var(--background);
     }
 
     .educational-box {
-      background: linear-gradient(135deg, #eff6ff, #f8fafc);
-      border-radius: 28px;
+      background: white;
+      border-radius: 20px;
       padding: 60px;
-      border: 1px solid #dbeafe;
+      border: 1px solid var(--border);
+    }
+
+    .educational-box .section-title {
+      color: var(--primary);
     }
 
     .educational p {
       margin-bottom: 18px;
-      color: #334155;
-      font-size: 18px;
+      color: var(--text-light);
+      font-size: 16px;
     }
+
+    /* =========================
+       FAQ
+    ========================= */
 
     .faq-grid {
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 14px;
       max-width: 900px;
       margin: 0 auto;
     }
 
     details {
       background: white;
-      border-radius: 22px;
-      padding: 24px;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+      border-radius: 12px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      box-shadow: 0 6px 20px rgba(45, 45, 45, 0.04);
     }
 
     summary {
       cursor: pointer;
-      font-size: 18px;
+      font-family: var(--heading-font);
+      font-size: 22px;
       font-weight: 700;
-      color: #0f172a;
+      color: var(--primary);
     }
 
     details p {
-      margin-top: 18px;
-      color: #475569;
+      margin-top: 16px;
+      color: var(--text-light);
+      font-size: 16px;
     }
 
+    /* =========================
+       SOBRE
+    ========================= */
+
     .about-section {
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      background: var(--primary);
       color: white;
     }
 
     .about-grid {
       display: grid;
       grid-template-columns: 0.9fr 1.1fr;
-      gap: 50px;
+      gap: 60px;
       align-items: center;
     }
 
     .about-image img {
       width: 100%;
-      height: auto;
-      border-radius: 30px;
+      border-radius: 20px;
       object-fit: cover;
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
-      border: 4px solid rgba(255, 255, 255, 0.08);
+
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+
+      border: 1px solid rgba(255, 255, 255, 0.12);
     }
 
     .about-content h2 {
       font-size: 42px;
+      color: white;
       margin-bottom: 26px;
     }
 
     .about-content p {
-      color: rgba(255, 255, 255, 0.90);
+      color: rgba(255, 255, 255, 0.9);
       margin-bottom: 18px;
-      font-size: 18px;
+      font-size: 16px;
     }
+
+    /* =========================
+       REDES SOCIAIS
+    ========================= */
 
     .social-section {
       text-align: center;
+      background: var(--background);
     }
 
     .social-links {
       margin-top: 30px;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 16px;
       flex-wrap: wrap;
     }
 
     .social-links a {
       background: white;
-      padding: 18px 28px;
-      border-radius: 18px;
-      color: #0f172a;
-      font-weight: 700;
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-      transition: 0.25s ease;
+      padding: 16px 24px;
+      border-radius: 10px;
+
+      color: var(--primary);
+
+      font-weight: 600;
+
+      border: 1px solid var(--border);
+
+      box-shadow: 0 8px 20px rgba(45, 45, 45, 0.05);
+
+      transition: 0.2s ease;
     }
 
     .social-links a:hover {
-      transform: translateY(-3px);
+      color: var(--secondary);
+      transform: translateY(-2px);
     }
+
+    /* =========================
+       CTA FINAL
+    ========================= */
 
     .final-cta {
       background:
-        linear-gradient(rgba(4, 16, 36, 0.84), rgba(4, 16, 36, 0.84)),
-        url("contract-banner.jpg") center center/cover no-repeat;
+        linear-gradient(
+          rgba(45, 45, 45, 0.88),
+          rgba(45, 45, 45, 0.92)
+        ),
+        url("./contract-banner.jpg") center center / cover no-repeat;
+
       text-align: center;
       color: white;
     }
 
     .final-cta h2 {
-      font-size: 46px;
+      font-family: var(--display-font);
+      font-size: 48px;
+      font-weight: 900;
       max-width: 900px;
       margin: 0 auto 28px;
-      line-height: 1.2;
+      line-height: 1.12;
+      color: white;
     }
 
+    /* =========================
+       FOOTER
+    ========================= */
+
     footer {
-      background: #020617;
-      color: rgba(255, 255, 255, 0.75);
+      background: #1C1C1C;
+      color: rgba(255, 255, 255, 0.72);
       text-align: center;
       padding: 28px 20px;
-      font-size: 14px;
+      font-family: var(--body-font);
+      font-size: 12px;
     }
+
+    /* =========================
+       MONO / CAPTION
+    ========================= */
+
+    .caption,
+    code {
+      font-family: var(--mono-font);
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    /* =========================
+       WHATSAPP
+    ========================= */
 
     .whatsapp-float {
       position: fixed;
       right: 24px;
       bottom: 24px;
       z-index: 999;
-      width: 72px;
-      height: 72px;
+
+      width: 64px;
+      height: 64px;
+
       border-radius: 50%;
-      background: linear-gradient(135deg, #25d366, #16a34a);
+
+      background: var(--secondary);
+
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 20px 35px rgba(37, 211, 102, 0.35);
-      transition: 0.25s ease;
+
+      box-shadow: 0 14px 30px rgba(45, 45, 45, 0.25);
+
+      transition: 0.2s ease;
     }
 
     .whatsapp-float:hover {
-      transform: scale(1.08);
+      transform: scale(1.06);
+      background: #5E4936;
     }
 
     .whatsapp-float svg {
-      width: 36px;
+      width: 32px;
       fill: white;
     }
+
+    /* =========================
+       RESPONSIVO
+    ========================= */
 
     @media (max-width: 992px) {
 
@@ -492,16 +656,13 @@
         grid-template-columns: 1fr;
       }
 
+      .hero {
+        min-height: auto;
+        padding: 100px 0;
+      }
+
       .hero h1 {
-        font-size: 42px;
-      }
-
-      .section-title {
-        font-size: 32px;
-      }
-
-      .final-cta h2 {
-        font-size: 34px;
+        font-size: 48px;
       }
 
       .form-info,
@@ -516,22 +677,37 @@
 
     @media (max-width: 640px) {
 
+      .container {
+        padding: 0 18px;
+      }
+
+      .hero {
+        padding: 80px 0;
+      }
+
       .hero h1 {
-        font-size: 34px;
+        font-size: 40px;
       }
 
       .hero p {
         font-size: 18px;
       }
 
+      .section-title {
+        font-size: 32px;
+      }
+
       .form-info h2,
-      .about-content h2,
+      .about-content h2 {
+        font-size: 34px;
+      }
+
       .final-cta h2 {
-        font-size: 30px;
+        font-size: 38px;
       }
 
       .form-box h3 {
-        font-size: 28px;
+        font-size: 30px;
       }
 
       .benefit-card,
@@ -541,406 +717,15 @@
       }
 
       .whatsapp-float {
-        width: 64px;
-        height: 64px;
+        width: 58px;
+        height: 58px;
+        right: 18px;
+        bottom: 18px;
+      }
+
+      .whatsapp-float svg {
+        width: 29px;
       }
     }
   </style>
 </head>
-
-<body>
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGFQX7LF" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <section class="hero">
-
-    <div class="container">
-
-      <div class="hero-grid">
-
-        <div>
-
-          <div class="hero-badge">
-            Direito Bancário • Defesa do Consumidor
-          </div>
-
-          <h1>
-            Está pagando juros abusivos no seu financiamento?
-            Saiba como reduzir suas parcelas e proteger seu patrimônio.
-          </h1>
-
-          <p>
-            Descubra como reduzir suas parcelas e proteger seu patrimônio.
-          </p>
-
-          <a href="#formulario" class="cta-btn">
-            Quero reduzir meu financiamento
-          </a>
-
-        </div>
-
-        <div class="hero-card">
-
-          <h3>O que pode ser analisado no seu contrato?</h3>
-
-          <ul>
-            <li>Juros abusivos acima da média de mercado</li>
-            <li>Tarifas indevidas e cobranças excessivas</li>
-            <li>Seguros embutidos sem autorização</li>
-            <li>Renegociação de parcelas</li>
-            <li>Possibilidade de redução da dívida</li>
-          </ul>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section>
-
-    <div class="container">
-
-      <h2 class="section-title">
-        Com a revisão do seu contrato, você pode:
-      </h2>
-
-      <div class="benefits-grid">
-
-        <div class="benefit-card">
-          <div class="benefit-icon">✓</div>
-          <p>Redução significativa do valor das parcelas mensais, aliviando seu orçamento.</p>
-        </div>
-
-        <div class="benefit-card">
-          <div class="benefit-icon">✓</div>
-          <p>Eliminação de juros abusivos e cobranças indevidas que oneram seu contrato.</p>
-        </div>
-
-        <div class="benefit-card">
-          <div class="benefit-icon">✓</div>
-          <p>Possibilidade de renegociação dos prazos para pagamentos mais adequados à sua realidade.</p>
-        </div>
-
-        <div class="benefit-card">
-          <div class="benefit-icon">✓</div>
-          <p>Recebimento de ressarcimento por valores pagos a mais, garantindo justiça financeira.</p>
-        </div>
-
-        <div class="benefit-card">
-          <div class="benefit-icon">✓</div>
-          <p>Proteção contra a apreensão do veículo, preservando seu patrimônio.</p>
-        </div>
-
-        <div class="benefit-card">
-          <div class="benefit-icon">✓</div>
-          <p>Orientação clara e transparente sobre seus direitos e deveres como consumidor.</p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="form-section" id="formulario">
-
-    <div class="container">
-
-      <div class="form-wrapper">
-
-        <div class="form-info">
-
-          <h2>
-            Faça uma análise do seu financiamento
-          </h2>
-
-          <p>
-            Preencha os dados abaixo e receba orientação jurídica especializada para verificar possíveis abusos no
-            seu contrato.
-          </p>
-
-        </div>
-
-        <div class="form-box">
-
-          <h3>Comece aqui!</h3>
-
-          <form id="lead-form">
-
-            <div>
-              <label>Valor aproximado do seu financiamento (R$)</label>
-              <input type="number" placeholder="Ex: 25000" required />
-            </div>
-
-            <div>
-              <label>Estado do contrato</label>
-
-              <select required>
-                <option value="">Selecione</option>
-                <option>Em dia</option>
-                <option>Atrasado</option>
-                <option>Negativado</option>
-              </select>
-            </div>
-
-            <div>
-              <label>Você já tentou negociar com o banco?</label>
-
-              <select required>
-                <option value="">Selecione</option>
-                <option>Sim</option>
-                <option>Não</option>
-              </select>
-            </div>
-
-            <button type="submit" class="submit-btn">
-              Quero Revisar Meu Contrato
-            </button>
-
-          </form>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="educational">
-
-    <div class="container">
-
-      <div class="educational-box">
-
-        <h2 class="section-title" style="text-align:left;">
-          Por que fazer a revisão do contrato?
-        </h2>
-
-        <p>
-          Os contratos de financiamento são elaborados para favorecer o banco, muitas vezes com cláusulas abusivas.
-        </p>
-
-        <p>
-          A revisão feita por um advogado especialista identifica essas ilegalidades e garante seus direitos.
-        </p>
-
-        <p>
-          Durante o processo, são verificadas taxas, juros e prazos, buscando adequar o contrato à realidade legal e
-          financeira do cliente, sem expor termos técnicos complexos.
-        </p>
-
-        <p>
-          O objetivo é proporcionar segurança e transparência, orientando sobre as melhores alternativas para proteger
-          seu patrimônio.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section>
-
-    <div class="container">
-
-      <h2 class="section-title">
-        Perguntas frequentes
-      </h2>
-
-      <div class="faq-grid">
-
-        <details>
-          <summary>1 — Preciso negociar com o banco?</summary>
-
-          <p>
-            Não. O ideal é que a negociação seja feita por um advogado especializado, capaz de identificar cláusulas
-            abusivas e buscar a melhor solução para o caso.
-          </p>
-        </details>
-
-        <details>
-          <summary>2 — Como saber se os juros são abusivos?</summary>
-
-          <p>
-            Somente com a análise do contrato. Em muitos casos, os juros e encargos cobrados ultrapassam os limites
-            considerados razoáveis pelo mercado.
-          </p>
-        </details>
-
-        <details>
-          <summary>3 — Posso receber indenização?</summary>
-
-          <p>
-            Sim, dependendo do caso. Cobranças indevidas, negativação irregular e outros prejuízos podem gerar direito
-            à indenização.
-          </p>
-        </details>
-
-        <details>
-          <summary>4 — Vale a pena fazer a revisão?</summary>
-
-          <p>
-            Sim. Muitos contratos possuem cláusulas abusivas que aumentam excessivamente o valor da dívida sem que o
-            consumidor perceba.
-          </p>
-        </details>
-
-        <details>
-          <summary>5 — Posso recuperar valores pagos?</summary>
-
-          <p>
-            Sim. Se forem identificadas cobranças ilegais, é possível pedir a devolução dos valores pagos
-            indevidamente.
-          </p>
-        </details>
-
-        <details>
-          <summary>6 — Existem outras ilegalidades além dos juros?</summary>
-
-          <p>
-            Sim. O contrato pode conter tarifas indevidas, seguros não autorizados, encargos excessivos e outras
-            cláusulas abusivas.
-          </p>
-        </details>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="about-section">
-
-    <div class="container">
-
-      <div class="about-grid">
-
-        <div class="about-image">
-          <img src="lawyer-hero.jpg" alt="Advogado especialista em revisão contratual" width="600" height="750"
-            loading="lazy" decoding="async">
-        </div>
-
-        <div class="about-content">
-
-          <h2>Sobre o advogado</h2>
-
-          <p>
-            Possuo 3 anos e meio de experiência jurídica, com pós-graduação em Direito do Consumidor.
-            Ajudei dezenas de clientes pelo Brasil com múltiplos processos focados em ajudar o consumidor contra os
-            abusos dos bancos, pagando somente o justo.
-          </p>
-
-          <p>
-            Meu compromisso é defender VOCÊ (CONSUMIDOR), buscando assegurar o respeito às normas legais e a proteção
-            do patrimônio dos meus clientes.
-          </p>
-
-          <p>
-            Minha atuação é pautada no atendimento humanitário e na disponibilidade para ajudar com seus problemas,
-            sempre com foco na melhor orientação jurídica possível.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="social-section">
-
-    <div class="container">
-
-      <h2 class="section-title">
-        Minhas redes sociais
-      </h2>
-
-      <p class="section-subtitle">
-        Fique por dentro de informações importantes e esclarecimentos que podem ajudar na sua jornada como consumidor.
-      </p>
-
-      <div class="social-links">
-
-        <a href="https://www.instagram.com/adv.italo.bezerra" target="_blank" rel="noopener noreferrer">
-          Instagram: Italo Bezerra | Advogado
-        </a>
-
-        <a href="https://www.tiktok.com/@italobezerra29" target="_blank" rel="noopener noreferrer">
-          TikTok: @italobezerra29
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="final-cta">
-
-    <div class="container">
-
-      <h2>
-        Não perca mais dinheiro com seu financiamento.
-        Saiba como reduzir suas parcelas agora mesmo.
-      </h2>
-
-      <a href="#formulario" class="cta-btn">
-        Quero reduzir meu financiamento
-      </a>
-
-    </div>
-
-  </section>
-
-  <footer>
-    © 2026 Italo Bezerra Advocacia — Todos os direitos reservados.
-  </footer>
-
-  <a class="whatsapp-float" href="#formulario" aria-label="Ir para formulário">
-
-    <svg viewBox="0 0 24 24">
-      <path
-        d="M20.52 3.48A11.77 11.77 0 0012 0C5.37 0 0 5.37 0 12a11.9 11.9 0 001.64 6L0 24l6-1.64a11.9 11.9 0 006 1.64c6.63 0 12-5.37 12-12a11.77 11.77 0 00-3.48-8.52zm-8.52 17.52a9.5 9.5 0 01-4.84-1.4l-.35-.21-3.6.98.96-3.51-.23-.36a9.5 9.5 0 1111.06 4.5zm5.1-6.3c-.28-.14-1.65-.81-1.9-.9-.25-.1-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.53-.45-.46-.61-.47-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.28-.96.94-.96 2.3 0 1.36.98 2.68 1.12 2.87.14.18 1.93 2.94 4.68 4.12.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z" />
-    </svg>
-
-  </a>
-
-  <script>
-    const form = document.getElementById("lead-form");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const inputs = form.querySelectorAll("input, select");
-
-      const valor = inputs[0].value;
-      const estado = inputs[1].value;
-      const negociou = inputs[2].value;
-
-      const mensagem =
-        `Olá! Gostaria de uma análise do meu financiamento.%0A%0A` +
-        `Valor aproximado: R$ ${valor}%0A` +
-        `Estado do contrato: ${estado}%0A` +
-        `Tentou negociar: ${negociou}`;
-
-      window.open(
-        `https://wa.me/5586999765214?text=${mensagem}`,
-        "_blank"
-      );
-    });
-  </script>
-
-</body>
-
-</html>
